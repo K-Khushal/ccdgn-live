@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.wall-notification-trial-background,
+.wall-notification-trial,
+.wall-notification,
+.wall-notification-default,
+.wall-notification-trial-title,
+.wall-notification-text {
+  display: none !important;
+}
+
