@@ -67,12 +67,12 @@ function App() {
   return (
     <>
       <main className="h-screen text-center w-full bg-white">
-        <div className="flex flex-row justify-between items-center">
+        <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex flex-col text-center items-center gap-2 w-1/2">
-            <img src="/CCGLogo.svg" alt="CCG" className="px-16 mb-6" />
+            <img src="/CCGLogo.svg" alt="CCG" className="py-6 md:py-0 md:px-16 md:mb-6" />
             <p className="text-xl py-4">Join us live for the event</p>
-            <p className="text-medium w-[200px] font-semibold">#CCDGN24 #CloudCommunityDay</p>
-            <div className="absolute bottom-0 left-0 flex flex-col gap-2 p-4">
+            <p className="pb-8 md:pb-0 text-medium w-[200px] font-semibold">#CCDGN24 #CloudCommunityDay</p>
+            <div className="hidden md:block absolute bottom-0 left-0 flex flex-col gap-2 p-4">
               {isFullscreen ? (
                 <button onClick={closeFullscreen}>
                   <AiOutlineFullscreenExit className="h-8 w-8" />
